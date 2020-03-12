@@ -1,0 +1,8 @@
+### Starting build.
+# Target: function_exercises.ml.depends, tags: { extension:ml, file:function_exercises.ml, ocaml, ocamldep, quiet }
+/usr/bin/ocamldep.opt -modules function_exercises.ml > function_exercises.ml.depends
+# Target: function_exercises.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:function_exercises.cmo, file:function_exercises.ml, implem, ocaml, quiet }
+/usr/bin/ocamlc.opt -c -o function_exercises.cmo function_exercises.ml
+# Target: function_exercises.byte, tags: { byte, dont_link_with, extension:byte, file:function_exercises.byte, link, ocaml, program, quiet }
+/usr/bin/ocamlc.opt function_exercises.cmo -o function_exercises.byte
+# Compilation successful.
